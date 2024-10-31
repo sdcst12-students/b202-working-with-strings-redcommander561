@@ -16,6 +16,20 @@ def replaceDog(input):
     str - the modified string
     '''
     modifiedString = input
+    newList = []
+    newList = x.split(" ")
+    print(newList)
+    if "dog" in newList:
+        d = newList.index('dog')
+        newList[d] = 'kitty'
+        print(newList)
+
+        sentence = ""
+        print("===")
+    for i in newList:
+        print(sentence)
+        sentence = sentence + i + " "
+        print(sentence)
 
     return modifiedString
 
