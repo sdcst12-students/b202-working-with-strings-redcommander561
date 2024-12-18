@@ -8,17 +8,32 @@ this function returns the length of the string
 
 (2 points)
 '''
+x = input("Enter a sentence: ")
 
 def split(input):
     '''
-    parameters
+    parameters:
     str input - string to be split
     
-    return
+    return:
     str new string with line break in the middle
     '''
+    
+    middle = len(input) // 2
+    
 
-    return
+    if input[middle] != ' ':
+        
+        while middle > 0 and input[middle] != ' ':
+            middle -= 1
+    
+    
+    result = input[:middle] + '\n' + input[middle:].strip()
+    
+    return result
+
+
+print(split(x))
 
 if __name__ == "__main__":
     sentence = "There is a big balloon in the blue sky"

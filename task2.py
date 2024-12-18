@@ -4,16 +4,27 @@
 Take a string and make sure that it is a proper sentence, with only the first letter capitalized and the rest of the sentence in lower case. We will assume that the sentence never includes names that require capitalization.
 (2 points)
 '''
+x = input("enter a sentence: ")
 
 def properCaps(input):
+
     '''
     parameters:
     str input - string to fix capitalization for
     
-    return
-    str - proper capitalized string
+    return:
+    str - properly capitalized string
     '''
-    return
+    
+    y = x.strip().lower()
+    
+
+    b = y.capitalize()
+    print(b)
+    
+    return input
+
+
 
 
 if __name__ == "__main__":

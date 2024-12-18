@@ -43,5 +43,5 @@ if __name__ == "__main__":
     x = 'my dog has fleas'
     assert replaceDog(x) == 'my kitty has fleas'
 
-    x = 'i have a dog and a goldfish as my pets'
+    x2 = 'i have a dog and a goldfish as my pets'
     assert replaceDog(x) == 'i have a kitty and a goldfish as my pets'
